@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Portofolio PLN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content {
+            display: none;
+            /* Sembunyikan semua konten awalnya */
+            opacity: 0;
+            /* Mulai dengan transparan */
+            transition: opacity 0.5s ease;
+            /* Transisi untuk efek fade */
+        }
+
+        .active {
+            display: block;
+            /* Tampilkan konten yang aktif */
+            opacity: 1;
+            /* Tampilkan dengan efek fade */
+        }
+
+        .content-image {
+            width: 100%;
+            /* Gambar responsif */
+            max-width: 400px;
+            /* Ukuran maksimum gambar */
+            cursor: pointer;
+            /* Tunjukkan bahwa gambar dapat diklik */
+            transition: transform 0.2s;
+            /* Transisi untuk efek zoom */
+        }
+
+        .content-image:hover {
+            transform: scale(1.05);
+            /* Zoom saat hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/pln-logo.png" alt="Logo PLN">
+            <img src="images/pln-logo2.jpeg" alt="Logo PLN">
+            <img src="images/pln-logo3.jpg" alt="Logo PLN">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="formulir.html">Formulir</a></li>
+                <li><a href="testimonial.html">testimonial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Tentang Kami</h2>
+        <p>PT LARIS (Listrik Alina Rezeki Sukses) Adalah Perusahaan Yang Bergerak Di Bidang Pembangunan Dan Pemasangan
+            Kelistrkan,Meberikan Solusi Lengkap Dan terpercaya Untuk kebutuhan Listrik Di Berbagai Sektor.Sebagai
+            Perusahaan Yang Telah Berpengalaman, PT LARIS Memiliki tim ahli Yang siap Memberikan Layanan Profesional
+            Mulai Dari Perencanaan,Pemasangan,Hingga Pemeliharaan Sistem Kelistrikan.</p>
+
+        <div class="menu">
+            <button onclick="showContent('visi & Misi')">Visi & Misi</button>
+            <button onclick="showContent('pelayanan')">pelayanan</button>
+            <button onclick="showContent('struktur')">struktur</button>
+        </div>
+
+        <div id="visi & Misi" class="content">
+            <h3>Visi & Misi</h3>
+            <img src="images/visi.jpg" alt="Visi PLN" class="content-image" onclick="openModal(this)">
+            <p>Menjadi perusahaan penyedia energi yang terkemuka dan terpercaya di Asia Tenggara.</p>
+        </div>
+
+        <div id="pelayanan" class="content">
+            <h3>pelayanan</h3>
+            <img src="images/misi.jpg" alt="Misi PLN" class="content-image" onclick="openModal(this)">
+            <p>Memberikan layanan listrik yang handal, berkelanjutan, dan ramah lingkungan.</p>
+        </div>
+
+        <div id="struktur" class="content">
+            <h3>struktur</h3>
+            <img src="images/sejarah.jpg" alt="Sejarah PLN" class="content-image" onclick="openModal(this)">
+            <p>Didirikan pada tahun 2024, PT. LARIS telah berkomitmen untuk menerangi Indonesia selama lebih dari 1
+                tahun.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PT LARIS. Semua hak dilindungi.</p>
+        <p>Kontak: assagafrosyid@gmail.com| Telepon: 081271854200</p>
+    </footer>
+
+    <!-- Modal untuk menampilkan gambar besar -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function showContent(contentId) {
+            // Sembunyikan semua konten
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Tampilkan konten yang dipilih
+            const selectedContent = document.getElementById(contentId);
+            selectedContent.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS Anda -->
+    <link rel="stylesheet" href="form-styles.css">
+    <link rel="stylesheet" href="index.html"> <!-- Link ke file CSS Anda -->
+    <link rel="stylesheet" href="form-index.html"> <!-- Link ke file CSS khusus untuk formulir -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/pln-logo.png" alt="Logo PLN">
+            <img src="images/pln-logo2.jpeg" alt="Logo PLN">
+            <img src="images/pln-logo3.jpg" alt="Logo PLN">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="formulir.html">Formulir</a></li>
+                <li><a href="testimonial.html">testimonial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Formulir Pendaftaran Instalasi</h1>
+        <form id="registrationForm" action="mailto:email@pt.com" method="post" enctype="text/plain">
+            <label for="nama">NAMA:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="nik">NIK:</label>
+            <input type="text" id="nik" name="nik" required>
+
+            <label for="alamatInstansi">Alamat Instansi:</label>
+            <input type="text" id="alamatInstansi" name="alamatInstansi" required>
+
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required>
+
+
+            <label for="kabupaten">Kabupaten:</label>
+            <input type="text" id="kabupaten" name="kabupaten" required>
+
+
+
+            <label for="kecamatan">Kecamatan:</label>
+            <input type="text" id="kecamatan" name="kecamatan" required>
+
+            <label for="kelurahan/desa">Kelurahan/desa:</label>
+            <input type="text" id="kelurahan/desa" name="kelurahan/desa" required>
+
+            <label for="kodePos">Kode Pos:</label>
+            <input type="text" id="kodePos" name="kodePos" required>
+
+            <label for="peruntukanInstalasi">Peruntukan Instalasi:</label>
+            <input type="text" id="peruntukanInstalasi" name="peruntukanInstalasi" required>
+
+            <label for="jumlahTitikLampu">Jumlah Titik Lampu:</label>
+            <input type="number" id="jumlahTitikLampu" name="jumlahTitikLampu" required>
+
+            <label for="jumlahSaklar">Jumlah Saklar:</label>
+            <input type="number" id="jumlahSaklar" name="jumlahSaklar" required>
+
+            <label for="jumlahStokKontak">Jumlah Stok Kontak:</label>
+            <input type="number" id="jumlahStokKontak" name="jumlahStokKontak" required>
+
+            <label for="dayaPLN">Daya PLN 1 fasa (VA):</label>
+            <select id="dayaPLN" name="dayaPLN" required>
+                <option value="">0</option>
+                <option value="450">450 VA SLO dan NIDI (Rp85.000)</option>
+                <option value="900">900 VA SLO dan NIDI (Rp150.000)</option>
+                <option value="1.300">1.300 VA SLO dan NIDI (Rp225.000)</option>
+                <option value="2.200">2.200 VA SLO dan NIDI (Rp330.000)</option>
+                <option value="3.500">3.500 VA SLO dan NIDI (Rp455.000)</option>
+                <option value="4.400">4.400 VA SLO dan NIDI (Rp572.000)</option>
+                <option value="5.500">5.500 VA SLO dan NIDI (Rp715.000)</option>
+                <option value="7.700">7.700 VA SLO dan NIDI (Rp1.001.000)</option>
+                <option value="11.000">11.0000 VA SLO dan NIDI (Rp1.375.000)</option>
+            </select>
+            <label for="dayaPLN">Daya PLN 3 fasa (VA):</label>
+            <select id="dayaPLN" name="dayaPLN" required>
+                <option value="">0</option>
+                <option value="3.900">3.900 VA SLO dan NIDI (Rp507.000)</option>
+                <option value="6.600">6.600 VA SLO dan NIDI (Rp858.000)</option>
+                <option value="10.600">10.600 VA SLO dan NIDI (Rp1.325.000)</option>
+                <option value="13.200">13.200 VA SLO dan NIDI (Rp1.650.000)</option>
+                <option value="16.500">16.500 VA SLO dan NIDI (Rp2.062.000)</option>
+                <option value="23.000">23.000 VA SLO dan NIDI (Rp2.300.000)</option>
+                <option value="33.000">33.000 VA SLO dan NIDI (Rp3.135.000)</option>
+                <option value="41.500">41.500 VA SLO dan NIDI (Rp3.942.000)</option>
+                <option value="53.000">53.0000 VA SLO dan NIDI (Rp5.035.000)</option>
+                <option value="66.000">66.0000 VA SLO dan NIDI (Rp6.270.000)</option>
+                <option value="82.500">82.500 VA SLO dan NIDI (Rp6.187.000)</option>
+                <option value="105.000">105.000 VA SLO dan NIDI (Rp7.875.000)</option>
+                <option value="131.000">131.0000 VA SLO dan NIDI (Rp9.825.000)</option>
+                <option value="147.000">147.0000 VA SLO dan NIDI (Rp11.025.000)</option>
+                <option value="164.000">164.0000 VA SLO dan NIDI (Rp12.300.000)</option>
+                <option value="197.000">197.0000 VA SLO dan NIDI (Rp14.775.000)</option>
+            </select>
+
+            <div class="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Saya setuju untuk menanggung segala risiko yang timbul apabila melanggar
+                    ketentuan.</label>
+            </div>
+
+            <button type="submit" onclick="sendToWhatsApp()">Kirim ke WhatsApp</button>
+        </form>
+    </div>
+
+    <script>
+        function sendToWhatsApp() {
+            const form = document.getElementById('registrationForm');
+            const formData = new FormData(form);
+            const params = new URLSearchParams(formData).toString();
+            const whatsappNumber = '081271854200'; // Ganti dengan nomor WhatsApp Anda
+            const whatsappMessage = `Pendaftaran Instalasi:\n${params}`;
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`);
+        }
+    </script>
+</body>
+
+</html>
